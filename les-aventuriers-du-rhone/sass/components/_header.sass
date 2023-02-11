@@ -1,0 +1,89 @@
+@use "../utils/_colors" as utils
+
+.navbarFixed
+    display: flex
+    justify-content: space-between
+    background-color: utils.$yellow
+    width: 100vw
+    max-width: none
+
+    &__Item
+        padding: 0.3rem 1rem 0 1rem
+        font-size: 1.3rem
+        display: flex
+        justify-content: space-between
+        li
+            padding: 0 1rem
+
+    &__logo
+        padding: 0.3rem 1rem 0 1rem
+
+.header
+    // background-color: lightblue
+    display: flex
+    flex-direction: column
+
+    
+    &__logo
+        width: 11rem
+        margin: 1rem auto
+        flex-shrink: 0
+
+    &__select
+        // margin: 3rem auto
+        font-weight: 500
+    
+    &__navbar
+        // border: 1px solid utils.$brown
+        border-radius: 5px
+        padding: 0 1rem
+        margin: 0.2rem 2rem
+        max-width: 1200px
+        background-color: utils.$yellow
+        display: flex
+        justify-content: space-between
+
+    &__link
+        display: flex
+    
+    &__logoSmall
+        width: 11rem
+        margin: 1rem auto
+        flex-shrink: 0
+    
+    &__linkSmall
+        display: flex
+
+
+@media screen and (min-width: 1201px) 
+    .header
+        position: relative
+
+        &__select 
+            display: none
+
+        &__navbar
+            background-color: white
+            margin: 0.2rem auto
+            min-width: 1200px
+
+        &__logo
+            margin: 2rem auto
+
+        &__logoSmall
+            display: none
+    
+    .navbar-nav 
+        font-size: 1.5rem
+        display: flex
+        justify-content: space-around
+        flex-grow: 1
+        color: utils.$brown
+
+    .nav-item
+        align-self: center
+
+
+        
+
+

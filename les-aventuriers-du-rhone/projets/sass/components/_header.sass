@@ -1,0 +1,112 @@
+@use "../utils/_colors" as utils
+
+// -------- START STYLE NAVBAR FIXED ---------- //
+
+.navbarFixed
+    display: flex
+    justify-content: space-between
+    background-color: utils.$yellow
+    width: 100vw
+    max-width: none
+
+    &__Item
+        padding: 0.3rem 1rem 0 1rem
+        font-size: 1.3rem
+        display: flex
+        justify-content: space-between
+        li
+            padding: 0 1rem
+
+    &__logo
+        padding: 0.3rem 1rem 0 1rem
+
+// -------- END STYLE NAVBAR FIXED ---------- //
+
+// -------- START HEADER ---------- //
+
+.title
+    text-align: center
+    color: utils.$brown
+    
+
+.image 
+    background-image: url('../images/cover.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 100vh
+
+.header
+    display: flex
+    flex-direction: column
+    background: transparent
+    
+
+    &__logo
+        width: 11rem
+        margin: 1rem auto
+        flex-shrink: 0
+        display: none
+
+    &__select
+        font-weight: 500
+    
+    &__navbar
+        border-radius: 5px
+        padding: 0 1rem
+        margin: 0.2rem 2rem
+        max-width: 1200px
+        background-color: utils.$yellow
+        display: flex
+        justify-content: space-between
+
+    &__link
+        display: none
+    
+    &__logoSmall
+        width: 11rem
+        margin: 1rem auto
+        flex-shrink: 0
+    
+    &__linkSmall
+        display: flex
+
+// -------- END HEADER ---------- //
+
+// -------- START RESPONSIVE ---------- //
+
+@media screen and (min-width: 1201px) 
+    .header
+        position: relative
+
+        &__select 
+            display: none
+
+        &__navbar
+            background: transparent
+            margin: 0.2rem auto
+            min-width: 1200px
+
+        &__logo
+            margin: 2rem auto
+            display: block
+
+        &__logoSmall
+            display: none
+        
+        &__link
+            display: flex
+    
+    .navbar-nav 
+        font-size: 1.5rem
+        display: flex
+        justify-content: space-around
+        flex-grow: 1
+        color: utils.$brown
+
+    .nav-item
+        align-self: center
+
+// -------- END RESPONSIVE ---------- //
+        
+
+
