@@ -16,6 +16,8 @@
         justify-content: space-between
         li
             padding: 0 1rem
+            font-size: 1.3rem
+            font-weight: 300
 
     &__logo
         padding: 0.3rem 1rem 0 1rem
@@ -24,13 +26,27 @@
 
 // -------- START HEADER ---------- //
 
-.title
+.h1
     text-align: center
     color: utils.$brown
+    font-size: 3rem
+    font-weight: 500
+    text-transform: uppercase
+    padding-top: 1rem
+
+.intro
+    color: utils.$brown
+    font-size: 1.5rem
+    font-weight: 400
+    text-align: center
+    min-width: 200px
+    max-width: 600px
+    margin: 0 auto
+    padding: clamp(1rem, 10%, 3rem)
     
 
 .image 
-    background-image: url('../images/cover.jpg')
+    background-image: url('../images/feudum-ks.jpg')
     background-size: cover
     background-repeat: no-repeat
     height: 100vh
@@ -75,6 +91,18 @@
 // -------- START RESPONSIVE ---------- //
 
 @media screen and (min-width: 1201px) 
+    .image
+        display: block
+
+    .h1
+        text-align: center
+        font-size: 6rem
+        font-weight: 700
+
+    .intro
+        font-size: 2rem
+        font-weight: 400
+
     .header
         position: relative
 
@@ -97,7 +125,8 @@
             display: flex
     
     .navbar-nav 
-        font-size: 1.5rem
+        font-size: 1.7rem
+        font-weight: 400
         display: flex
         justify-content: space-around
         flex-grow: 1

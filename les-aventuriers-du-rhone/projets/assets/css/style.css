@@ -2,15 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Amatic SC", cursive;
-  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
   color: inherit;
 }
-
 ul {
   list-style: none;
 }
@@ -30,18 +28,35 @@ ul {
 }
 .navbarFixed__Item li {
   padding: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 .navbarFixed__logo {
   padding: 0.3rem 1rem 0 1rem;
 }
 
-.title {
+.h1 {
   text-align: center;
   color: #573809;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+
+.intro {
+  color: #573809;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  min-width: 200px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: clamp(1rem, 10%, 3rem);
 }
 
 .image {
-  background-image: url("../images/cover.jpg");
+  background-image: url("../images/feudum-ks.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -83,6 +98,18 @@ ul {
 }
 
 @media screen and (min-width: 1201px) {
+  .image {
+    display: block;
+  }
+  .h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+  }
+  .intro {
+    font-size: 2rem;
+    font-weight: 400;
+  }
   .header {
     position: relative;
   }
@@ -105,7 +132,8 @@ ul {
     display: flex;
   }
   .navbar-nav {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
@@ -114,4 +142,87 @@ ul {
   .nav-item {
     align-self: center;
   }
+}
+.event {
+  background-color: rgb(238, 211, 0);
+}
+.event__section {
+  background-color: #573809;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0;
+}
+.event__titles {
+  display: flex;
+}
+.event__title {
+  display: inline-block;
+  background-color: rgb(238, 211, 0);
+  border-radius: 20px;
+  color: #573809;
+  border: 3px solid #573809;
+  text-transform: uppercase;
+  padding: 0.7rem;
+  margin: 1rem;
+}
+.event__table {
+  background-color: white;
+  margin: 0 auto;
+}
+.event__table__row {
+  display: flex;
+  justify-content: space-between;
+}
+.event__table__row div {
+  align-self: center;
+}
+.event__table__row h4 {
+  font-size: 1rem;
+}
+.event__table__row h4 a {
+  color: blue;
+}
+.event__table__row h4 a:hover {
+  text-decoration: underline;
+}
+.event__table__row p {
+  margin-bottom: 0;
+  align-self: center;
+  font-weight: bold;
+}
+
+.table {
+  border: 2px solid #573809;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .event {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .event__section {
+    padding: auto;
+  }
+  .event__tables {
+    display: flex;
+  }
+}
+.button {
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #573809;
+  margin: 1.5rem;
+}
+.button:hover {
+  background-color: rgb(238, 211, 0);
+}
+
+.avatar {
+  width: 5rem;
 }/*# sourceMappingURL=style.css.map */
