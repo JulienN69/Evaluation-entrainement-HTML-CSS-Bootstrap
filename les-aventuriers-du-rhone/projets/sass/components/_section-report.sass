@@ -1,0 +1,47 @@
+@use "../utils/colors" as utils
+
+.report
+    background-color: utils.$blue
+
+    display: flex
+    flex-direction: column
+    &__title
+        display: inline-block
+        background-color: utils.$yellow
+        border-radius: 20px
+        color: utils.$brown
+        border: 3px solid utils.$brown
+        text-transform: uppercase
+        padding: 0.7rem
+        margin: 1rem
+
+    &__cards
+        display: flex
+        justify-content: space-between
+        width: 60%
+    &__card
+        color: utils.$brown
+        box-shadow: 2px 2px 2px utils.$brown
+        margin: 0.5rem
+        display: grid
+        img
+            max-width: 80%
+            padding: 1rem
+            justify-self: center
+    &__text
+        font-size: 1.3rem
+        h5
+            border-bottom: 2px solid utils.$brown
+            padding-bottom: 1rem
+            text-transform: uppercase
+        p
+            line-height: 1.7rem
+
+
+// ---------------- START RESPONSIVE -----------------//
+
+@media screen and (min-width: 1201px) 
+    .report
+        &__container
+         
+

@@ -1,0 +1,74 @@
+@use "../utils/_main" as utils 
+
+   
+.section-event 
+    background-color: white
+    display: flex
+    flex-direction: column
+
+
+    &__paragraphe
+        margin-bottom: 0
+        align-self: center
+        font-weight: bold
+        @extend %paragraphe-l
+
+    &__container
+        background-color: utils.$yellow
+        width: 100vw
+        overflow: hidden
+        padding: 0
+        justify-content: space-between
+        div
+            align-self: center
+        h4  
+            font-size: 1rem
+            a
+                color: blue
+            &:hover
+                text-decoration: underline
+    &__titles
+        display: flex
+
+    &__mainTitle
+        @extend %title-2
+        text-transform: uppercase
+        padding: 0.7rem
+        margin: 1rem
+
+    &__title
+        text-transform: uppercase
+        padding: 0.7rem
+        margin: 1rem
+        @extend %title-2
+
+    &__table__row
+        display: flex
+        justify-content: space-between
+
+    &__svg
+        color: utils.$brown
+
+    &__table
+        background-color: white
+        margin: 0 auto
+
+.table
+    border: 2px solid utils.$brown
+    border-radius: 10px
+    
+// -------------- START RESPONSIVE ----------------//
+
+@media screen and ( min-width: 768px )
+    .section-event
+        border-radius: 10px
+        margin-top: 20px
+        margin-bottom: 20px
+        &__section
+            padding: auto
+        &__tables
+            display: flex
+        &__container
+            border-radius: 10px
+
+    

@@ -1,16 +1,53 @@
+.section-event__mainTitle, .section-event__title, .header__title {
+  font-family: "Lilita One", cursive;
+  color: white;
+  font-size: 4rem;
+}
+
+.header__subtitle {
+  font-family: "Lilita One", cursive;
+  color: rgb(238, 211, 0);
+  font-size: 2rem;
+}
+
+.navbarFixed__Item {
+  font-family: "Cabin", sans-serif;
+  color: #573809;
+  font-weight: 300;
+}
+
+.section-event__paragraphe {
+  font-family: "Cabin", sans-serif;
+  color: #573809;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
-a, a:hover {
+a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
 ul {
   list-style: none;
+}
+
+.flux {
+  width: 100%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .navbarFixed {
@@ -28,35 +65,17 @@ ul {
 }
 .navbarFixed__Item li {
   padding: 0 1rem;
-  font-size: 1.3rem;
-  font-weight: 300;
+  margin-top: 0.3rem;
 }
 .navbarFixed__logo {
   padding: 0.3rem 1rem 0 1rem;
 }
-
-.h1 {
-  text-align: center;
-  color: #573809;
-  font-size: 3rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding-top: 1rem;
+.navbarFixed__logo li {
+  margin-top: 0.3rem;
 }
 
-.intro {
-  color: #573809;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: center;
-  min-width: 200px;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: clamp(1rem, 10%, 3rem);
-}
-
-.image {
-  background-image: url("../images/feudum-ks.jpg");
+.header-picture {
+  background-image: url("../images/feudum-ks-3.gif");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -66,6 +85,10 @@ ul {
   display: flex;
   flex-direction: column;
   background: transparent;
+}
+.header__subtitle {
+  text-align: center;
+  text-transform: uppercase;
 }
 .header__logo {
   width: 11rem;
@@ -96,19 +119,20 @@ ul {
 .header__linkSmall {
   display: flex;
 }
+.header__title {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
 
 @media screen and (min-width: 1201px) {
-  .image {
+  .header-picture {
     display: block;
-  }
-  .h1 {
-    text-align: center;
-    font-size: 6rem;
-    font-weight: 700;
-  }
-  .intro {
-    font-size: 2rem;
-    font-weight: 400;
+    height: 100vh;
+    width: 100vw;
   }
   .header {
     position: relative;
@@ -124,6 +148,7 @@ ul {
   .header__logo {
     margin: 2rem auto;
     display: block;
+    width: 8rem;
   }
   .header__logoSmall {
     display: none;
@@ -131,31 +156,108 @@ ul {
   .header__link {
     display: flex;
   }
+  .header__title {
+    font-size: 7rem;
+  }
+  .header__subtitle {
+    font-size: 4rem;
+  }
   .navbar-nav {
     font-size: 1.7rem;
     font-weight: 400;
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
-    color: #573809;
+    color: white;
   }
   .nav-item {
     align-self: center;
   }
+  .nav-item:hover {
+    text-decoration: underline;
+  }
 }
-.event {
+.section-event {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.section-event__paragraphe {
+  margin-bottom: 0;
+  align-self: center;
+  font-weight: bold;
+}
+.section-event__container {
   background-color: rgb(238, 211, 0);
-}
-.event__section {
-  background-color: #573809;
   width: 100vw;
   overflow: hidden;
   padding: 0;
+  justify-content: space-between;
 }
-.event__titles {
+.section-event__container div {
+  align-self: center;
+}
+.section-event__container h4 {
+  font-size: 1rem;
+}
+.section-event__container h4 a {
+  color: blue;
+}
+.section-event__container h4:hover {
+  text-decoration: underline;
+}
+.section-event__titles {
   display: flex;
 }
-.event__title {
+.section-event__mainTitle {
+  text-transform: uppercase;
+  padding: 0.7rem;
+  margin: 1rem;
+}
+.section-event__title {
+  text-transform: uppercase;
+  padding: 0.7rem;
+  margin: 1rem;
+}
+.section-event__table__row {
+  display: flex;
+  justify-content: space-between;
+}
+.section-event__svg {
+  color: #573809;
+}
+.section-event__table {
+  background-color: white;
+  margin: 0 auto;
+}
+
+.table {
+  border: 2px solid #573809;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-event {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section-event__section {
+    padding: auto;
+  }
+  .section-event__tables {
+    display: flex;
+  }
+  .section-event__container {
+    border-radius: 10px;
+  }
+}
+.report {
+  background-color: rgb(212, 231, 255);
+  display: flex;
+  flex-direction: column;
+}
+.report__title {
   display: inline-block;
   background-color: rgb(238, 211, 0);
   border-radius: 20px;
@@ -165,50 +267,34 @@ ul {
   padding: 0.7rem;
   margin: 1rem;
 }
-.event__table {
-  background-color: white;
-  margin: 0 auto;
-}
-.event__table__row {
+.report__cards {
   display: flex;
   justify-content: space-between;
+  width: 60%;
 }
-.event__table__row div {
-  align-self: center;
+.report__card {
+  color: #573809;
+  box-shadow: 2px 2px 2px #573809;
+  margin: 0.5rem;
+  display: grid;
 }
-.event__table__row h4 {
-  font-size: 1rem;
+.report__card img {
+  max-width: 80%;
+  padding: 1rem;
+  justify-self: center;
 }
-.event__table__row h4 a {
-  color: blue;
+.report__text {
+  font-size: 1.3rem;
 }
-.event__table__row h4 a:hover {
-  text-decoration: underline;
+.report__text h5 {
+  border-bottom: 2px solid #573809;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
 }
-.event__table__row p {
-  margin-bottom: 0;
-  align-self: center;
-  font-weight: bold;
+.report__text p {
+  line-height: 1.7rem;
 }
 
-.table {
-  border: 2px solid #573809;
-  border-radius: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .event {
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .event__section {
-    padding: auto;
-  }
-  .event__tables {
-    display: flex;
-  }
-}
 .button {
   border-radius: 1.5rem;
   text-transform: uppercase;
