@@ -33,6 +33,7 @@
     background-size: cover
     background-repeat: no-repeat
     height: 100vh
+    margin-bottom: 0
 
 .header
     display: flex
@@ -40,19 +41,19 @@
     background: transparent
 
     &__title
-        @extend %title-2
+        @extend %title-3
 
     &__subtitle
         text-align: center
         text-transform: uppercase
-        @extend %title-3
+        @extend %title-4
 
     &__logo
         width: 11rem
         margin: 1rem auto
         flex-shrink: 0
         display: none
-
+            
     &__select
         font-weight: 500
     
@@ -119,7 +120,7 @@
 
         &__title
             font-size: 7rem
-            
+
         &__subtitle
             font-size: 4rem
             

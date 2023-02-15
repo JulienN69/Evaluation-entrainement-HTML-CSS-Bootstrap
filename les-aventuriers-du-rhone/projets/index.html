@@ -118,9 +118,20 @@
 
         <!--------------------- Start Section Event --------------------->
 
-        <section class="container-fluid section-event">
+        <section class="section-event">
             <div class="container p-3 text-center section-event__container">
-                <h2 class="section-event__mainTitle">Trouver une rencontre</h2>
+                <div class="section-event__container-title-logo">
+                    <a class="section-event__link" href="#">
+                        <img
+                            class="section-event__logo"
+                            src="assets/images/logo.gif"
+                            alt="logo"
+                        />
+                    </a>
+                    <h2 class="section-event__mainTitle">
+                        Trouver une rencontre
+                    </h2>
+                </div>
                 <p class="section-event__paragraphe">
                     Dans cette section vous trouvrez la liste des rencontres
                     proposées par nos membres, ainsi que les prochains
@@ -133,19 +144,21 @@
 
                 <div class="section-event__tables">
                     <div class="col col-md-6">
-                        <h3 class="section-event__title">individuelle</h3>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="55"
-                            height="55"
-                            fill="currentColor"
-                            class="bi bi-person-fill section-event__svg"
-                            viewBox="0 0 16 16"
-                        >
-                            <path
-                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-                            />
-                        </svg>
+                        <div class="section-event__container-title">
+                            <h3 class="section-event__title">individuelle</h3>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="currentColor"
+                                class="bi bi-person-fill section-event__svg"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                />
+                            </svg>
+                        </div>
                         <table
                             class="section-event__table table table-striped table-hover"
                         >
@@ -287,19 +300,21 @@
                         </table>
                     </div>
                     <div class="col col-md-6">
-                        <h3 class="section-event__title">collectives</h3>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="55"
-                            height="55"
-                            fill="currentColor"
-                            class="bi bi-people-fill event__svg"
-                            viewBox="0 0 16 16"
-                        >
-                            <path
-                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
-                            />
-                        </svg>
+                        <div class="section-event__container-title">
+                            <h3 class="section-event__title">collectives</h3>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="currentColor"
+                                class="bi bi-people-fill section-event__svg"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                                />
+                            </svg>
+                        </div>
                         <table
                             class="section-event__table table table-striped table-hover"
                         >
@@ -396,20 +411,20 @@
         <!----------------------- END SECTION EVENT ----------------------->
 
         <!----------------------- START SECTION REPORT ----------------------->
-        <section class="container-fluid report">
-            <div class="flux report__container">
-                <h3 class="report__title text-center p-2">
+        <!-- <section class="container-fluid section-report">
+            <div class="flux section-report__container">
+                <h3 class="section-report__title text-center p-2">
                     Comptes-Rendus de parties
                 </h3>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 p-2">
                     <div class="col">
-                        <div class="card report__card">
+                        <div class="card section-report__card">
                             <img
                                 src="assets/images/terra-mystica.gif"
                                 class="card-img-top report__image"
                                 alt="..."
                             />
-                            <div class="card-body report__text">
+                            <div class="card-body section-report__text">
                                 <h5 class="card-title text-center">
                                     Une partie incroyable
                                 </h5>
@@ -425,13 +440,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card report__card">
+                        <div class="card section-report__card">
                             <img
                                 src="assets/images/root.jpg"
                                 class="card-img-top report__image"
                                 alt="..."
                             />
-                            <div class="card-body report__text">
+                            <div class="card-body section-report__text">
                                 <h5 class="card-title text-center">
                                     Une partie incroyable
                                 </h5>
@@ -447,13 +462,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card report__card">
+                        <div class="card section-report__card">
                             <img
                                 src="assets/images/terra-mystica.gif"
                                 class="card-img-top report__image"
                                 alt="..."
                             />
-                            <div class="card-body report__text">
+                            <div class="card-body section-report__text">
                                 <h5 class="card-title text-center">
                                     Une partie incroyable
                                 </h5>
@@ -469,13 +484,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card report__card">
+                        <div class="card section-report__card">
                             <img
                                 src="assets/images/terra-mystica.gif"
                                 class="card-img-top report__image"
                                 alt="..."
                             />
-                            <div class="card-body report__text">
+                            <div class="card-body section-report__text">
                                 <h5 class="card-title text-center">
                                     Une partie incroyable
                                 </h5>
@@ -491,13 +506,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card report__card">
+                        <div class="card section-report__card">
                             <img
                                 src="assets/images/terra-mystica.gif"
                                 class="card-img-top report__image"
                                 alt="..."
                             />
-                            <div class="card-body report__text">
+                            <div class="card-body section-report__text">
                                 <h5 class="card-title text-center">
                                     Une partie incroyable
                                 </h5>
@@ -513,13 +528,13 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card report__card">
+                        <div class="card section-report__card">
                             <img
                                 src="assets/images/terra-mystica.gif"
                                 class="card-img-top report__image"
                                 alt="..."
                             />
-                            <div class="card-body report__text">
+                            <div class="card-body section-report__text">
                                 <h5 class="card-title text-center">
                                     Une partie incroyable
                                 </h5>
@@ -536,8 +551,73 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+        <section class="container-fluid section-report">
+            <div class="flux section-report__flux">
+                <h2 class="section-report__title">Comptes-Rendus de parties</h2>
 
+                <div class="section-report__grid">
+                    <div>
+                        <img
+                            src="assets/images/Root2.jpg"
+                            class="card-img-top report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="assets/images/Root2.jpg"
+                            class="card-img-top report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="assets/images/Root2.jpg"
+                            class="card-img-top report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="assets/images/Root2.jpg"
+                            class="card-img-top report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="assets/images/Root2.jpg"
+                            class="card-img-top report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="assets/images/Root2.jpg"
+                            class="card-img-top report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="assets/images/Root2.jpg"
+                            class="card-img-top report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="assets/images/Root2.jpg"
+                            class="card-img-top report__image"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+                <button class="button">Lire tous les CR</button>
+                <button class="button">Ecrire un compte-rendu</button>
+            </div>
+        </section>
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
