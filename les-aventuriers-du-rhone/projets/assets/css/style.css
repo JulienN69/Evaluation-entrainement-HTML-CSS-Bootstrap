@@ -1,19 +1,20 @@
-.section-report__title, .section-event__mainTitle {
+.section-info__title, .section-report__title, .section-event__mainTitle {
   font-family: "Lilita One", cursive;
   color: white;
   font-size: 3rem;
   text-transform: uppercase;
 }
 
-.section-event__title, .header__title {
+.footer__contact h3, .footer__inscription h3, .footer__social h3, .section-info__functioning h3, .section-event__title, .header__title {
   font-family: "Lilita One", cursive;
   color: #573809;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .header__subtitle {
   font-family: "Lilita One", cursive;
-  color: rgb(238, 211, 0);
+  color: rgb(243, 203, 72);
   font-size: 2rem;
 }
 
@@ -23,11 +24,11 @@
   font-weight: 300;
 }
 
-.section-event__paragraphe {
+.footer__contact p, .footer__mail, .footer__inscription p, .footer__social p, .section-info__association p, .section-info__functioning p, .section-event__paragraphe {
   font-family: "Cabin", sans-serif;
   color: #573809;
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 * {
@@ -60,7 +61,7 @@ ul {
 .navbarFixed {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(238, 211, 0);
+  background-color: rgb(243, 203, 72);
   width: 100vw;
   max-width: none;
 }
@@ -112,7 +113,7 @@ ul {
   padding: 0 1rem;
   margin: 0.2rem 2rem;
   max-width: 1200px;
-  background-color: rgb(238, 211, 0);
+  background-color: rgb(243, 203, 72);
   display: flex;
   justify-content: space-between;
 }
@@ -198,14 +199,11 @@ ul {
   width: 80%;
 }
 .section-event__container {
-  background-color: rgb(238, 211, 0);
+  background-color: rgb(243, 203, 72);
   width: 100vw;
   overflow: hidden;
   padding: 0;
   justify-content: space-between;
-}
-.section-event__container div {
-  align-self: center;
 }
 .section-event__container h4 {
   font-size: 1rem;
@@ -278,11 +276,11 @@ ul {
   }
 }
 .section-report {
-  background-color: red;
+  background-color: rgb(212, 231, 255);
   padding: 0;
 }
 .section-report__flux {
-  background-color: blue;
+  background-color: white;
 }
 .section-report__grid {
   display: grid;
@@ -290,12 +288,27 @@ ul {
   gap: 2rem;
   padding: 2rem;
 }
+.section-report__grid div img {
+  border: 3px solid #573809;
+}
+.section-report__grid div img:hover {
+  animation: changeOpacity 1s ease 1s infinite alternate;
+}
 .section-report__title {
+  color: #573809;
   text-align: center;
   width: 70%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
+@keyframes changeOpacity {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
 @media screen and (min-width: 576px) {
   .section-report__grid {
     grid-template-columns: 1fr 1fr;
@@ -306,18 +319,156 @@ ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-.button {
+.section-info {
+  background-color: rgb(243, 203, 72);
+  width: 100%;
+  overflow: hidden;
+}
+.section-info__container {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.section-info__title {
+  color: #573809;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-info__trait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  border-top: 2px solid #573809;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+.section-info__trait img {
+  width: 10%;
+  position: relative;
+  top: -1rem;
+  left: 43%;
+  background-color: white;
+}
+.section-info__image {
+  width: 100%;
+  border: 3px solid #573809;
+  margin-top: 1.5rem;
+}
+.section-info__association, .section-info__functioning {
+  padding: 3rem;
+}
+.section-info__association p, .section-info__functioning p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.section-info__association__button {
+  margin: 0 auto;
+}
+.section-info__functioning p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.section-info__functioning h3 {
+  padding: 1rem;
+  text-align: center;
+}
+.section-info__managers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+.section-info__managers img {
+  width: 80%;
+  border-radius: 50%;
+  align-self: center;
+  border: 2px solid #573809;
+}
+.section-info__managers div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-info__managers div p {
+  font-size: 1.3rem;
+  align-self: center;
+}
+
+@media screen and (min-width: 992px) {
+  .section-info__container {
+    display: flex;
+  }
+}
+.footer {
+  background-color: #573809;
+}
+.footer__flex {
+  justify-content: space-between;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__contact, .footer__social, .footer__inscription {
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 1rem auto;
+}
+.footer__contact h3, .footer__social h3, .footer__inscription h3 {
+  color: rgb(255, 255, 255);
+}
+.footer__contact p, .footer__social p, .footer__inscription p {
+  color: rgb(255, 255, 255);
+}
+.footer__contact p div, .footer__social p div, .footer__inscription p div {
+  display: flex;
+}
+.footer__mail {
+  color: rgb(255, 255, 255);
+}
+.footer__social div {
+  display: flex;
+  flex-direction: column;
+}
+.footer__social div h3 {
+  margin: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .footer__flex {
+    display: flex;
+  }
+}
+.button, .button__yellow {
   border-radius: 1.5rem;
   text-transform: uppercase;
   color: white;
   padding: 0.5rem 1.5rem;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 400;
   background-color: #573809;
-  margin: 1.5rem;
+  margin: 1.5rem auto;
+  display: block;
+  border: none;
 }
-.button:hover {
-  background-color: rgb(238, 211, 0);
+.button:hover, .button__yellow:hover {
+  box-shadow: 3px 3px 3px black;
+  color: white;
+}
+.button__yellow {
+  background-color: rgb(243, 203, 72);
+  color: #573809;
+}
+.button__yellow:hover {
+  color: #573809;
 }
 
 .avatar {

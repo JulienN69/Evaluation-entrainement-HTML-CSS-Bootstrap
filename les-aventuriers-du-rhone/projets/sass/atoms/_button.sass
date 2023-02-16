@@ -6,10 +6,24 @@
     color: white
     padding: 0.5rem 1.5rem
     font-size: 1.3rem
-    font-weight: 500
+    font-weight: 400
     background-color: utils.$brown
-    margin: 1.5rem
+    margin: 1.5rem auto
+    display: block
+    border: none
     &:hover
+        box-shadow: 3px 3px 3px black
+        color: white
+
+    &__yellow
+        @extend .button
         background-color: utils.$yellow
+        color: utils.$brown
+        &:hover
+            color: utils.$brown
+
+
+
+
 
             

@@ -1,0 +1,52 @@
+@use "../utils/_main" as utils
+
+.footer
+    background-color: utils.$brown
+
+    &__flex
+        justify-content: space-between
+        padding: 2rem
+        color: utils.$white
+        max-width: 1600px
+        margin-left: auto
+        margin-right: auto
+
+    &__contact
+        color: white
+        text-align: center
+        width: 80%
+        margin: 1rem auto
+        h3
+            @extend %title-3
+            color: utils.$white
+        p
+            @extend %paragraphe-l
+            color: utils.$white
+            div
+                display: flex
+    
+    &__mail
+        @extend %paragraphe-l
+        color: utils.$white
+
+
+    &__inscription
+        @extend .footer__contact
+    
+    &__social
+        @extend .footer__contact
+        
+        div
+            display: flex
+            flex-direction: column
+            h3
+                margin: 3rem
+
+
+
+
+// ---------- START RESPONSIVE ------------- //
+
+@media screen and (min-width: 992px)
+    .footer__flex
+        display: flex
