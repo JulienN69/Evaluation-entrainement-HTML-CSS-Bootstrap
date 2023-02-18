@@ -1,4 +1,15 @@
-@mixin backgroundcolor($color: rgba(238, 211, 0, 50))
+@use "_fonts" as font
+@use "_colors" as color
+
+@mixin title($fontsize: 2rem)
+    font-family: font.$font-title
+    color: color.$brown
+    font-size: $fontsize
+    text-transform: uppercase
+
+@mixin min-width($min-width)
+    @media screen and (min-width: $min-width)
+        @content
 
 // @mixin logo
 //   @if @media screen (max-width: 1201px)

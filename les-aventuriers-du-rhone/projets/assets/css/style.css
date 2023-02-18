@@ -1,11 +1,11 @@
-.section-info__title, .section-report__title, .section-event__mainTitle {
+.section-report__title, .section-event__mainTitle {
   font-family: "Lilita One", cursive;
   color: white;
   font-size: 3rem;
   text-transform: uppercase;
 }
 
-.footer__contact h3, .footer__inscription h3, .footer__social h3, .section-info__functioning h3, .section-event__title, .header__title {
+.footer__contact h3, .footer__inscription h3, .footer__social h3, .section-event__title, .header__title {
   font-family: "Lilita One", cursive;
   color: #573809;
   font-size: 2rem;
@@ -331,9 +331,17 @@ ul {
   margin-bottom: 2rem;
 }
 .section-info__title {
+  font-family: "Lilita One", cursive;
   color: #573809;
+  font-size: 1.5rem;
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .section-info__title {
+    font-size: 3rem;
+  }
 }
 .section-info__trait {
   display: flex;
@@ -375,8 +383,17 @@ ul {
   text-align: center;
 }
 .section-info__functioning h3 {
+  font-family: "Lilita One", cursive;
+  color: #573809;
+  font-size: 1.3rem;
+  text-transform: uppercase;
   padding: 1rem;
   text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .section-info__functioning h3 {
+    font-size: 2rem;
+  }
 }
 .section-info__managers {
   display: grid;

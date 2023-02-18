@@ -1,4 +1,4 @@
-@use "../utils/_main.sass" as utils
+@use "../utils/_main" as utils
 
 .section-info
     background-color: utils.$yellow
@@ -13,10 +13,12 @@
 
 
     &__title
-        @extend %title-2
-        color: utils.$brown
+        @include utils.title(1.5rem)
         text-align: center
         margin-bottom: 2rem
+
+        @include utils.min-width(576px)
+            font-size: 3rem
 
     &__trait
         display: flex
@@ -64,9 +66,12 @@
             text-align: center
 
         h3
-            @extend %title-3
+            @include utils.title(1.3rem)
             padding: 1rem
             text-align: center
+
+            @include utils.min-width(576px)
+                font-size: 2rem
 
     &__managers
         display: grid
