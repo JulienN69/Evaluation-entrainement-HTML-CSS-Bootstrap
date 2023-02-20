@@ -5,23 +5,24 @@
 
     &__flex
         justify-content: space-between
-        padding: 2rem
+        padding: 2rem 2rem 1rem
         color: utils.$white
-        max-width: 1600px
+        max-width: 1200px
         margin-left: auto
         margin-right: auto
 
     &__contact
         color: white
         text-align: center
-        width: 80%
         margin: 1rem auto
         h3
             @extend %title-3
             color: utils.$white
+            font-size: 1.5rem
         p
             @extend %paragraphe-l
             color: utils.$white
+            margin-bottom: 0
             div
                 display: flex
     
@@ -40,8 +41,6 @@
         @extend .footer__contact
         
         div
-            display: flex
-            flex-direction: column
             h3
                 margin: 3rem
 

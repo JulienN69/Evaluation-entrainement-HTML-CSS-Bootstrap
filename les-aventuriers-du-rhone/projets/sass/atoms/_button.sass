@@ -12,16 +12,17 @@
     display: block
     border: none
     &:hover
-        box-shadow: 3px 3px 3px black
+        background-color: lighten(utils.$brown, 20%)
         color: white
 
     &__yellow
         @extend .button
         background-color: utils.$yellow
         color: utils.$brown
+        margin-top: 0
         &:hover
+            background-color: darken(utils.$yellow, 20%)
             color: utils.$brown
-
 
 
 
