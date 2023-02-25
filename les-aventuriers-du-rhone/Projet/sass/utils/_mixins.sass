@@ -1,0 +1,23 @@
+@use "_fonts" as font
+@use "_colors" as color
+
+@mixin title($fontsize: 2rem)
+    font-family: font.$font-title
+    color: color.$brown
+    font-size: $fontsize
+    text-transform: uppercase
+
+@mixin paragraphe($fontsize: 2rem)
+    font-family: font.$font-main
+    color: color.$brown
+    font-size: $fontsize
+
+@mixin min-width($min-width)
+    @media screen and (min-width: $min-width)
+        @content
+
+// @mixin logo
+//   @if @media screen (max-width: 1201px)
+//     display: none
+//   @else 
+//     display: inline

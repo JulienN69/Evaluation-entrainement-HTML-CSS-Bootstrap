@@ -1,0 +1,144 @@
+@use "../utils/_main" as utils
+
+// -------- START HEADER ---------- //
+
+// -------- START HEADER NAVBAR ---------- //
+
+.navbarFixed
+    display: flex
+    justify-content: space-between
+    background-color: utils.$yellow
+    width: 100vw
+    max-width: none
+
+    &__Item
+        @extend %paragraphe-m
+        padding: 0.3rem 1rem 0 1rem
+        font-size: 1.3rem
+        display: flex
+        justify-content: space-between
+        li
+            padding: 0 1rem  
+            margin-top: 0.3rem
+
+    &__logo
+        padding: 0.3rem 2rem 0 1rem
+        li
+            margin-top: 0.3rem
+
+// -------- END NAVBAR ---------- //
+  
+.header-picture
+    background-image: url('../images/feudum-ks-3.gif')
+    background-size: cover
+    background-repeat: no-repeat
+    height: 100vh
+    margin-bottom: 0
+
+.header
+    display: flex
+    flex-direction: column
+    background: transparent
+
+    &__title
+        @extend %title-3
+
+    &__subtitle
+        text-align: center
+        text-transform: uppercase
+        @extend %title-4
+
+    &__logo
+        width: 11rem
+        margin: 1rem auto
+        flex-shrink: 0
+        display: none
+            
+    &__select
+        font-weight: 500
+    
+    &__navbar
+        border-radius: 5px
+        padding: 0 1rem
+        margin: 0.2rem 2rem
+        max-width: 1200px
+        background-color: utils.$yellow
+        display: flex
+        justify-content: space-between
+
+    &__link
+        display: none
+    
+    &__logoSmall
+        width: 11rem
+        margin: 1rem auto
+        flex-shrink: 0
+    
+    &__linkSmall
+        display: flex
+
+    &__title
+        text-align: center
+        color: white
+        font-size: 3rem
+        font-weight: 500
+        text-transform: uppercase
+        padding-top: 1rem
+
+
+// -------- END HEADER ---------- //
+
+// -------- START RESPONSIVE ---------- //
+
+@media screen and (min-width: 1201px) 
+    .header-picture
+        display: block
+        height: 100vh
+        width: 100vw
+
+    .header
+        position: relative
+
+        &__select 
+            display: none
+
+        &__navbar
+            background: transparent
+            margin: 0.2rem auto
+            min-width: 1200px
+
+        &__logo
+            margin: 2rem auto
+            display: block
+            width: 8rem                
+
+        &__logoSmall
+            display: none
+        
+        &__link
+            display: flex
+
+        &__title
+            font-size: 7rem
+
+        &__subtitle
+            font-size: 4rem
+            
+    
+    .navbar-nav 
+        font-size: 1.7rem
+        font-weight: 400
+        display: flex
+        justify-content: space-around
+        flex-grow: 1
+        color: white
+
+    .nav-item
+        align-self: center
+        &:hover
+            text-decoration: underline
+
+// -------- END RESPONSIVE ---------- //
+        
+
+

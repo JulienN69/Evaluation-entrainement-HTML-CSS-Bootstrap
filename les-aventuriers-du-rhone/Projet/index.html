@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="bootstrap.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Lilita+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Les aventuriers du Rhône</title>
+        <description>
+            <b>Les aventuriers du Rhône</b> est une association pour les mordus
+            de jeux de société qui veulent créer ou rejoindre des parties
+            !</description
+        >
+    </head>
+    <body>
+        <!----------------- Start Header --------------------->
+
+        <figure class="header-picture">
+            <header class="header">
+                <nav class="navbarFixed">
+                    <ul class="navbarFixed__Item">
+                        <li><a href="#">Inscription</a></li>
+                        <li><a href="#">Connexion</a></li>
+                    </ul>
+                    <ul class="navbarFixed__logo">
+                        <li>
+                            <a href="#">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    fill="currentColor"
+                                    class="bi bi-search"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header__linkSmall" href="#">
+                    <img
+                        class="header__logoSmall"
+                        src="assets/images/logo.gif"
+                        alt="logo"
+                    />
+                </a>
+
+                <nav class="header__navbar navbar navbar-expand-xl">
+                    <a href="#" class="header__select navbar-brand"
+                        >Sélectionner une page
+                    </a>
+
+                    <button
+                        type="button"
+                        class="navbar-toggler"
+                        data-toggle="collapse"
+                        data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </button>
+
+                    <div
+                        class="header__list collapse navbar-collapse"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#section-event" class="nav-link">
+                                    Rencontres
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Comptes rendus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="header__link" href="#">
+                                    <img
+                                        class="header__logo"
+                                        src="assets/images/logo.gif"
+                                        alt="logo"
+                                    />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> Forum </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Présentation </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <h1 class="header__title">Les aventuriers du Rhône</h1>
+            <p class="header__subtitle">Association ludique</p>
+        </figure>
+
+        <!--------------------- End Header --------------------->
+
+        <!--------------------- Start Section Event --------------------->
+
+        <section class="section-event" id="section-event">
+            <div class="container p-3 text-center section-event__container">
+                <div class="section-event__container-title-logo">
+                    <a class="section-event__link" href="#">
+                        <img
+                            class="section-event__logo"
+                            src="assets/images/logo.gif"
+                            alt="logo"
+                        />
+                    </a>
+                    <h2 class="section-event__mainTitle">
+                        Trouver une rencontre
+                    </h2>
+                </div>
+                <p class="section-event__paragraphe">
+                    Dans cette section vous trouverez la liste des rencontres
+                    proposées par nos membres, ainsi que les prochains
+                    évenements collectifs. N'hésitez pas à vous inscrire et à
+                    laisser un petit commentaire sur la page de la rencontre.
+                </p>
+                <p class="section-event__paragraphe">
+                    Si vous ne trouvez pas la rencontre qu'il vous faut
+                    n'hésitez pas à en proposer une !
+                </p>
+
+                <div class="section-event__tables">
+                    <div class="col col-md-6">
+                        <div class="section-event__container-title">
+                            <h3 class="section-event__title">individuelle</h3>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="currentColor"
+                                class="bi bi-person-fill section-event__svg"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                />
+                            </svg>
+                        </div>
+                        <table
+                            class="section-event__table table table-striped table-hover"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td scope="col">
+                                        <div class="section-event__table__row">
+                                            <picture
+                                                ><img
+                                                    src="assets/images/Chien-jaune.jpg"
+                                                    alt="avatar"
+                                                    class="img-thumbnail rounded-circle avatar"
+                                            /></picture>
+                                            <div>
+                                                <h4>
+                                                    <a href="rencontre.html"
+                                                        >Soirée oldies</a
+                                                    >
+                                                </h4>
+                                                <p>Date(s) : 15/02/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-event__table__row">
+                                            <p>3 inscrit(s)</p>
+                                            <button class="btn btn-warning">
+                                                s'inscrire
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">
+                                        <div class="section-event__table__row">
+                                            <picture
+                                                ><img
+                                                    src="assets/images/Eric.png"
+                                                    alt="avatar"
+                                                    class="img-thumbnail rounded-circle avatar"
+                                            /></picture>
+                                            <div>
+                                                <h4>
+                                                    <a href="#"
+                                                        >Paladin du royaume de
+                                                        l'Ouest</a
+                                                    >
+                                                </h4>
+                                                <p>Date(s) : 21/02/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-event__table__row">
+                                            <p>2 inscrit(s)</p>
+                                            <button class="btn btn-warning">
+                                                s'inscrire
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">
+                                        <div class="section-event__table__row">
+                                            <picture
+                                                ><img
+                                                    src="assets/images/Guillaume.png"
+                                                    alt="avatar"
+                                                    class="img-thumbnail rounded-circle avatar"
+                                            /></picture>
+                                            <div>
+                                                <h4>
+                                                    <a href="#"
+                                                        >Soirée jeux
+                                                        d'ambiance</a
+                                                    >
+                                                </h4>
+                                                <p>Date(s) : 25/02/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-event__table__row">
+                                            <p>5 inscrit(s)</p>
+                                            <button class="btn btn-warning">
+                                                s'inscrire
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">
+                                        <div class="section-event__table__row">
+                                            <picture
+                                                ><img
+                                                    src="assets/images/Neiron.png"
+                                                    alt="avatar"
+                                                    class="img-thumbnail rounded-circle avatar"
+                                            /></picture>
+                                            <div>
+                                                <h4>
+                                                    <a href="#"
+                                                        >7 Wonders Armada</a
+                                                    >
+                                                </h4>
+                                                <p>Date(s) : 04/03/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-event__table__row">
+                                            <p>4 inscrit(s)</p>
+                                            <button class="btn btn-warning">
+                                                complet
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">
+                                        <div class="section-event__table__row">
+                                            <picture
+                                                ><img
+                                                    src="assets/images/roro.jpg"
+                                                    alt="avatar"
+                                                    class="img-thumbnail rounded-circle avatar"
+                                            /></picture>
+                                            <div>
+                                                <h4>
+                                                    <a href="#"
+                                                        >Un bon vieux monopoly
+                                                        ?</a
+                                                    >
+                                                </h4>
+                                                <p>Date(s) : 07/03/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-event__table__row">
+                                            <p>0 inscrit(s)</p>
+                                            <button class="btn btn-warning">
+                                                s'inscrire
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col col-md-6">
+                        <div class="section-event__container-title">
+                            <h3 class="section-event__title">collective</h3>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="currentColor"
+                                class="bi bi-people-fill section-event__svg"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                                />
+                            </svg>
+                        </div>
+                        <table
+                            class="section-event__table table table-striped table-hover"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td scope="col">
+                                        <div class="section-event__table__row">
+                                            <picture
+                                                ><img
+                                                    src="assets/images/logo.gif"
+                                                    alt="avatar"
+                                                    class="img-thumbnail rounded-circle avatar"
+                                            /></picture>
+                                            <div>
+                                                <h4>
+                                                    <a href="#"
+                                                        >Yakapiocher : le
+                                                        retour</a
+                                                    >
+                                                </h4>
+                                                <p>Date(s) : 01/03/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-event__table__row">
+                                            <p>21 inscrit(s)</p>
+                                            <button class="btn btn-warning">
+                                                s'inscrire
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">
+                                        <div class="section-event__table__row">
+                                            <picture
+                                                ><img
+                                                    src="assets/images/logo.gif"
+                                                    alt="avatar"
+                                                    class="img-thumbnail rounded-circle avatar"
+                                            /></picture>
+                                            <div>
+                                                <h4>
+                                                    <a href="#"
+                                                        >Journée gros jeux</a
+                                                    >
+                                                </h4>
+                                                <p>Date(s) : 06/04/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-event__table__row">
+                                            <p>15 inscrit(s)</p>
+                                            <button class="btn btn-warning">
+                                                s'inscrire
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col">
+                                        <div class="section-event__table__row">
+                                            <picture
+                                                ><img
+                                                    src="assets/images/logo.gif"
+                                                    alt="avatar"
+                                                    class="img-thumbnail rounded-circle avatar"
+                                            /></picture>
+                                            <div>
+                                                <h4>
+                                                    <a href="#"
+                                                        >L'assemblée générale</a
+                                                    >
+                                                </h4>
+                                                <p>Date(s) : 29/04/2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="section-event__table__row">
+                                            <p>11 inscrit(s)</p>
+                                            <button class="btn btn-warning">
+                                                s'inscrire
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <button type="button" class="btn button">
+                    Créer une rencontre
+                </button>
+            </div>
+        </section>
+
+        <!----------------------- END SECTION EVENT ----------------------->
+
+        <!----------------------- START SECTION REPORT ----------------------->
+
+        <section class="container-fluid section-report">
+            <div class="flux section-report__flux">
+                <div class="d-flex justify-content-center">
+                    <a class="section-report__link" href="#">
+                        <img
+                            class="section-report__logo"
+                            src="assets/images/logo.gif"
+                            alt="logo"
+                        />
+                    </a>
+                    <h2 class="section-report__title">
+                        Comptes rendus de parties
+                    </h2>
+                </div>
+
+                <div class="section-report__grid">
+                    <div class="section-report__cell cell-2">
+                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <p>
+                            Partie assez incroyable hier soir, 2 joueurs
+                            découvraient le jeu. Pour ma part c'était ma 5ème
+                            partie et je me décidais à tester les loutres...
+                        </p>
+                        <button
+                            type="button"
+                            class="btn btn-primary section-report__cell-btn"
+                        >
+                            Lire la suite
+                        </button>
+                    </div>
+                    <div class="cell-1">
+                        <img
+                            src="assets/images/paleo.jpg"
+                            class="card-img-top section-report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="section-report__cell cell-4">
+                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <p>
+                            Partie assez incroyable hier soir, 2 joueurs
+                            découvraient le jeu. Pour ma part c'était ma 5ème
+                            partie et je me décidais à tester les loutres...
+                        </p>
+                        <button type="button" class="btn btn-primary">
+                            Lire la suite
+                        </button>
+                    </div>
+                    <div class="cell-3">
+                        <img
+                            src="assets/images/7wonders.jpg"
+                            class="card-img-top section-report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="section-report__cell cell-6">
+                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <p>
+                            Partie assez incroyable hier soir, 2 joueurs
+                            découvraient le jeu. Pour ma part c'était ma 5ème
+                            partie et je me décidais à tester les loutres...
+                        </p>
+                        <button type="button" class="btn btn-primary">
+                            Lire la suite
+                        </button>
+                    </div>
+                    <div class="cell-5">
+                        <img
+                            src="assets/images/mage-knight.jpg"
+                            class="card-img-top section-report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="section-report__cell cell-8">
+                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <p>
+                            Partie assez incroyable hier soir, 2 joueurs
+                            découvraient le jeu. Pour ma part c'était ma 5ème
+                            partie et je me décidais à tester les loutres...
+                        </p>
+                        <button type="button" class="btn btn-primary">
+                            Lire la suite
+                        </button>
+                    </div>
+                    <div class="cell-7">
+                        <img
+                            src="assets/images/gwt.jpg"
+                            class="card-img-top section-report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="section-report__cell cell-10">
+                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <p>
+                            Partie assez incroyable hier soir, 2 joueurs
+                            découvraient le jeu. Pour ma part c'était ma 5ème
+                            partie et je me décidais à tester les loutres...
+                        </p>
+                        <button type="button" class="btn btn-primary">
+                            Lire la suite
+                        </button>
+                    </div>
+                    <div class="cell-9">
+                        <img
+                            src="assets/images/terraforming-mars.jpg"
+                            class="card-img-top section-report__image"
+                            alt="..."
+                        />
+                    </div>
+
+                    <div class="section-report__cell cell-12">
+                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <p>
+                            Partie assez incroyable hier soir, 2 joueurs
+                            découvraient le jeu. Pour ma part c'était ma 5ème
+                            partie et je me décidais à tester les loutres...
+                        </p>
+                        <button type="button" class="btn btn-primary">
+                            Lire la suite
+                        </button>
+                    </div>
+                    <div class="cell-11">
+                        <img
+                            src="assets/images/mysterium.jpg"
+                            class="card-img-top section-report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="section-report__cell cell-14">
+                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <p>
+                            Partie assez incroyable hier soir, 2 joueurs
+                            découvraient le jeu. Pour ma part c'était ma 5ème
+                            partie et je me décidais à tester les loutres...
+                        </p>
+                        <button type="button" class="btn btn-primary">
+                            Lire la suite
+                        </button>
+                    </div>
+                    <div class="cell-13">
+                        <img
+                            src="assets/images/Blood-rage.jpg"
+                            class="card-img-top section-report__image"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="section-report__cell cell-16">
+                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <p>
+                            Partie assez incroyable hier soir, 2 joueurs
+                            découvraient le jeu. Pour ma part c'était ma 5ème
+                            partie et je me décidais à tester les loutres...
+                        </p>
+                        <button type="button" class="btn btn-primary">
+                            Lire la suite
+                        </button>
+                    </div>
+                    <div class="cell-15">
+                        <img
+                            src="assets/images/dixit.jpeg"
+                            class="card-img-top section-report__image"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+                <button class="btn button">
+                    Lire tous les CR<svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-dice-5 m-2 pb-1"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"
+                        />
+                        <path
+                            d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                        />
+                    </svg>
+                </button>
+                <button class="btn button__yellow">
+                    Ecrire un compte-rendu
+                </button>
+            </div>
+        </section>
+
+        <!--------- END SECTION REPORT, START SECTION INFO ---------->
+
+        <section class="section-info">
+            <div class="container section-info__flex">
+                <div class="section-info__container container">
+                    <div class="section-info__association col-md-12 col-lg-6">
+                        <h2 class="section-info__title">Qui sommes nous ?</h2>
+                        <div class="section-info__trait">
+                            <span></span>
+                            <img
+                                src="assets/images/meeple_38522 (1).png"
+                                alt=""
+                            />
+                        </div>
+                        <img
+                            src="assets/images/photosgroupe.JPG"
+                            alt="photo de groupe"
+                            class="section-info__image"
+                        />
+                        <p>
+                            Les Aventuriers du Rhône (LADR) est une association
+                            loi 1901 de jeux de société “modernes”. Elle est à
+                            destination des amatrices et amateurs de jeux de
+                            société qui vivent ou sont de passage en région
+                            lyonnaise.
+                        </p>
+                        <p>
+                            En 2009, sous l’impulsion de Jérôme, cette
+                            communauté a vu le jour. L’optique première était de
+                            permettre aux personnes aux horaires de loisirs
+                            atypiques de se rencontrer. Ces partages de moments
+                            ludiques on finalement permis de créer un réseau
+                            local de joueurs. À l’image de ce réseau, il n’y a
+                            pas plus de lieux attitrés pour nous rencontrer que
+                            d’horaires pour le faire. Il suffit de prendre
+                            contact via notre site et de se jeter à l’eau !
+                            Notre association regroupe désormais plus de 50
+                            membres actifs.
+                        </p>
+                        <img
+                            src="assets/images/dés.jpg"
+                            alt="dés"
+                            class="section-info__image"
+                        />
+                    </div>
+                    <div class="section-info__functioning col-md-12 col-lg-6">
+                        <h2 class="section-info__title">
+                            Fonctionnement de l'asso
+                        </h2>
+                        <div class="section-info__trait">
+                            <span></span>
+                            <img
+                                src="assets/images/meeple_38522 (1).png"
+                                alt=""
+                            />
+                        </div>
+                        <p>
+                            Notre association se démarque de celles avec un
+                            local ou des bar à jeu. Elle permet à tous,
+                            adhérents ou sympathisants, d’organiser facilement
+                            des rencontres ludiques à domicile. Quel que soit le
+                            moment de la semaine, quel que soit l’horaire, il
+                            est possible d’accueillir ou de se faire accueillir.
+                        </p>
+                        <p>
+                            Cela peut se faire autour d’un projet vague («
+                            joueeeeeer », n’importe quoi, je suis en manque).
+                            Vous pouvez aussi proposer un projet plus précis : «
+                            on cherche un 4ème qui connaisse bien les règles de
+                            Forbidden Stars avec extension et dans la variante
+                            américaine ». Cela se fait vraiment en fonction des
+                            envies et des possibilités d’accueils. Il n’y a
+                            aucune obligation d’accueillir chez soi ou de tenir
+                            un rythme particulier.
+                        </p>
+                        <h3>Conseil d'administration</h3>
+                        <p>
+                            Voici les personnes à solliciter pour vos questions:
+                        </p>
+                        <div class="section-info__managers">
+                            <div>
+                                <img
+                                    src="assets/images/cowboy-avatar.jpg"
+                                    alt="avatar"
+                                />
+                                <p><a href="#"> Cow-boy Georges / Bruno</a></p>
+                            </div>
+                            <div>
+                                <img
+                                    src="assets/images/dooophy-avatar.jpg"
+                                    alt="avatar"
+                                />
+                                <p><a href="#"> Dooophy / Ludo</a></p>
+                            </div>
+                            <div>
+                                <img
+                                    src="assets/images/lenneth.jpg"
+                                    alt="avatar"
+                                />
+                                <p><a href="#"> Lenneth / Annabelle</a></p>
+                            </div>
+                            <div>
+                                <img
+                                    src="assets/images/ytrezius.jpg"
+                                    alt="avatar"
+                                />
+                                <p><a href="#"> Ytrezius / Quentin</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn button">
+                    Voir notre portfolio
+                </button>
+                <button type="button" class="btn button__yellow">
+                    Comptes rendus des AG
+                </button>
+            </div>
+        </section>
+
+        <!--------------- END SECTION INFO, START FOOTER ---------------->
+
+        <footer class="container-fluid footer">
+            <div class="footer__flex">
+                <div class="footer__contact col-md-12 col-lg-4">
+                    <h3>contact</h3>
+                    <p>Les Aventuriers du Rhône</p>
+                    <p>10bis rue du Docteur Albéric Pont</p>
+                    <p>69005 LYON</p>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="30"
+                            fill="currentColor"
+                            class="bi bi-envelope-at m-2"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
+                            />
+                            <path
+                                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                            />
+                        </svg>
+                        <a href="#" class="footer__mail"
+                            >lesaventuriersdurhone@gmail.com</a
+                        >
+                    </div>
+                </div>
+                <div class="footer__inscription col-md-12 col-lg-4">
+                    <h3>Abonnement à notre Newsletter</h3>
+                    <button class="button__yellow">Newsletter</button>
+                </div>
+                <div class="footer__social col-md-12 col-lg-4">
+                    <h3>Retrouvez-nous sur les réseaux</h3>
+                    <div class="d-flex justify-content-around p-2">
+                        <a href="#">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="currentColor"
+                                class="bi bi-facebook m-1"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="currentColor"
+                                class="bi bi-twitter m-1"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="currentColor"
+                                class="bi bi-instagram m-1"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

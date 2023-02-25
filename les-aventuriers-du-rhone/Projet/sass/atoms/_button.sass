@@ -1,0 +1,30 @@
+@use "../utils/_main" as utils
+    
+.button
+    border-radius: 1.5rem
+    text-transform: uppercase
+    color: white
+    padding: 0.5rem 1.5rem
+    font-size: 1.3rem
+    font-weight: 400
+    background-color: utils.$brown
+    margin: 1.5rem auto
+    display: block
+    border: none
+    &:hover
+        background-color: lighten(utils.$brown, 20%)
+        color: white
+
+    &__yellow
+        @extend .button
+        background-color: utils.$yellow
+        color: utils.$brown
+        margin-top: 0
+        &:hover
+            background-color: darken(utils.$yellow, 20%)
+            color: utils.$brown
+
+
+
+
+            
