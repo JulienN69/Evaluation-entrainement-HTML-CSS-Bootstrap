@@ -772,6 +772,56 @@ ul {
     display: flex;
   }
 }
+main {
+  background-color: #352e25;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Lilita One", cursive;
+  color: #352e25;
+  font-size: 2rem;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+.section-encounter {
+  background-color: rgb(243, 203, 72);
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+.section-encounter iframe {
+  width: 100%;
+  display: block;
+}
+.section-encounter_title {
+  border: 2.5px solid #352e25;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+.section-encounter_title img {
+  margin: 1rem;
+}
+.section-encounter__information {
+  flex-direction: column;
+}
+.section-encounter__presentation {
+  margin: 1rem 3rem;
+  flex-direction: column;
+}
+.section-encounter__presentation div p {
+  font-family: "Cabin", sans-serif;
+  color: #352e25;
+  font-size: 1.5rem;
+}
+.section-encounter__presentation img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 30rem;
+}
+
 .button, .button__yellow {
   border-radius: 1.5rem;
   text-transform: uppercase;

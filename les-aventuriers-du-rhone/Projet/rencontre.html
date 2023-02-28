@@ -45,92 +45,129 @@
             </nav>
         </header>
 
-        <main>
+        <main class="container-fluid">
             <section class="section-encounter container flux">
-                <h1>Soirée oldies</h1>
+                <div
+                    class="section-encounter_title d-flex justify-content-start"
+                >
+                    <img
+                        src="/assets/images/Chien-jaune.jpg"
+                        alt="avatar"
+                        class="avatar rounded-circle"
+                    />
+                    <h1>Soirée oldies</h1>
+                </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.8876682220102!2d4.800503600000001!3d45.7533979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb9131dcd949%3A0x9fa5cf8de61a545b!2sRue%20du%20Dr%20Alb%C3%A9ric%20Pont%2C%2069005%20Lyon!5e0!3m2!1sfr!2sfr!4v1677360898761!5m2!1sfr!2sfr"
-                    width="600"
-                    height="450"
+                    height="350"
                     style="border: 0"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
-                <div class="section-encounter__presentation d-flex">
-                    <p>
-                        Comme tous les jeudi je vous propose de sortir un vieux
-                        jeu. Shakespeare est un jeu de gestion et développement
-                        dans lequel les joueurs doivent créer la meilleure pièce
-                        de théâtre en construisant leur décors, créant leurs
-                        costumes et en faisant répéter leurs acteurs pour offrir
-                        un spectacle de qualité pour la Reine.
-                    </p>
-                    <p>
-                        3 places disponibles. J'expliquerai les règles sans
-                        souci, si vous préférez les avoir vu avant je vous
-                        recommande cette vidéo.
-                    </p>
-                    <img
-                        src="assets/images/shakespeare.jpg"
-                        alt="shakespeare"
-                    />
-                </div>
                 <div class="section-encounter__information d-flex">
-                    <div class="section-encounter__information-adress">
-                        <div class="card" style="width: 18rem">
+                    <div
+                        class="section-encounter__information-adress col col-12 col-md-6"
+                    >
+                        <div class="card m-3 border-dark">
                             <div class="card-body">
-                                <h5 class="card-title">Adresse</h5>
+                                <h5 class="card-title">Emplacement</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit
+                                    <a href="#" class="text-primary"
+                                        >Chez Chien Jaune</a
+                                    >
                                 </h6>
                                 <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Eaque quasi enim eveniet
-                                    molestias nemo consequuntur, illum
-                                    doloremque praesentium sunt! Qui, cum rem?
-                                    Sequi, quisquam error incidunt nisi
-                                    molestiae in ipsum.
+                                    252 rue du docteur Albéric Pont
                                 </p>
-                                <a href="#" class="card-link">Card link</a>
-                                <a href="#" class="card-link">Another link</a>
+                                <p class="card-text">69005 LYON</p>
                             </div>
                         </div>
                     </div>
-                    <div class="section-encounter__information-inscription">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div
+                        class="section-encounter__information-adress col col-12 col-md-6 m-3"
+                    >
+                        <div class="card border-dark mb-3">
+                            <div class="card-header">
+                                Rencontre proposée par
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Date(s) et Heure(s)</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text">27/02/2023</p>
+                                    <p class="card-text">20:00 - 23h45</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="section-encounter__presentation d-flex">
+                    <div class="col col-md-8 col-12">
+                        <p>
+                            Comme tous les jeudi je vous propose de sortir un
+                            vieux jeu. Shakespeare est un jeu de gestion et
+                            développement dans lequel les joueurs doivent créer
+                            la meilleure pièce de théâtre en construisant leur
+                            décors, créant leurs costumes et en faisant répéter
+                            leurs acteurs pour offrir un spectacle de qualité
+                            pour la Reine.
+                        </p>
+                        <p>
+                            3 places disponibles. J'expliquerai les règles sans
+                            souci, si vous préférez les avoir vu avant je vous
+                            recommande cette vidéo.
+                        </p>
+                    </div>
+
+                    <img
+                        src="assets/images/shakespeare.jpg"
+                        alt="shakespeare"
+                        class="col col-md-4 col-12 img-fluid"
+                    />
+                </div>
+
+                <div class="section-encounter__inscription m-5">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Aventuriers présents</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <img
+                                        src="assets/images/Chien-jaune.jpg"
+                                        alt="avatar"
+                                        class="avatar rounded-circle"
+                                    />
+                                    <h5>Chien-Jaune</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img
+                                        src="assets/images/Chien-jaune.jpg"
+                                        alt="avatar"
+                                        class="avatar rounded-circle"
+                                    />
+                                    <h5>Chien-Jaune</h5>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <img
+                                        src="assets/images/Chien-jaune.jpg"
+                                        alt="avatar"
+                                        class="avatar rounded-circle"
+                                    />
+                                    <h5>Chien-Jaune</h5>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <button class="button">S'inscrire</button>
             </section>
         </main>

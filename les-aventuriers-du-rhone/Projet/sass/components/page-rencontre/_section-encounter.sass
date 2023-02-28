@@ -1,0 +1,40 @@
+@use "../../utils/_main" as utils
+
+main
+    background-color: utils.$brown
+    overflow: hidden
+
+h1
+    @include utils.title(2rem)
+    align-self: center
+
+.section-encounter
+    background-color: utils.$yellow
+    margin: 1rem auto
+    border-radius: 10px
+    padding-top: 1rem
+    iframe
+        width: 100%
+        display: block
+
+    &_title
+        border: 2.5px solid utils.$brown
+        margin: 1rem
+        background-color: white
+        border-radius: 10px
+        img
+            margin: 1rem
+
+    &__information
+        flex-direction: column
+
+    &__presentation
+        margin: 1rem 3rem
+        flex-direction: column
+        div
+            p
+                @include utils.paragraphe(1.5rem)
+        
+        img
+            object-fit: cover
+            max-width: 30rem
