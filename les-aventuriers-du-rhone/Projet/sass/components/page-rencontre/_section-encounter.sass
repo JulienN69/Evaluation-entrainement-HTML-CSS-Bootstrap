@@ -1,5 +1,8 @@
 @use "../../utils/_main" as utils
 
+p
+    margin-bottom: 0
+
 main
     background-color: utils.$brown
     overflow: hidden
@@ -13,6 +16,7 @@ h1
     margin: 1rem auto
     border-radius: 10px
     padding-top: 1rem
+    padding-bottom: 2rem
     iframe
         width: 100%
         display: block
@@ -26,15 +30,27 @@ h1
             margin: 1rem
 
     &__information
-        flex-direction: column
+        @media screen and (min-width: 768px)
+            display: flex
 
     &__presentation
-        margin: 1rem 3rem
+        margin: 1rem auto
+        display: flex
         flex-direction: column
+        @media screen and (min-width: 992px)
+            flex-direction: row
+        
         div
             p
                 @include utils.paragraphe(1.5rem)
         
         img
             object-fit: cover
-            max-width: 30rem
+            margin: 0 auto
+
+    &__inscription
+        background-color: white
+
+.title-col
+    @include utils.title(1.4rem)
+    font-weight: 300

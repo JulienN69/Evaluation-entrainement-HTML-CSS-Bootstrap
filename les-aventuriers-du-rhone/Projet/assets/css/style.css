@@ -772,6 +772,10 @@ ul {
     display: flex;
   }
 }
+p {
+  margin-bottom: 0;
+}
+
 main {
   background-color: #352e25;
   overflow: hidden;
@@ -790,6 +794,7 @@ h1 {
   margin: 1rem auto;
   border-radius: 10px;
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .section-encounter iframe {
   width: 100%;
@@ -804,12 +809,20 @@ h1 {
 .section-encounter_title img {
   margin: 1rem;
 }
-.section-encounter__information {
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .section-encounter__information {
+    display: flex;
+  }
 }
 .section-encounter__presentation {
-  margin: 1rem 3rem;
+  margin: 1rem auto;
+  display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .section-encounter__presentation {
+    flex-direction: row;
+  }
 }
 .section-encounter__presentation div p {
   font-family: "Cabin", sans-serif;
@@ -819,7 +832,18 @@ h1 {
 .section-encounter__presentation img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 30rem;
+  margin: 0 auto;
+}
+.section-encounter__inscription {
+  background-color: white;
+}
+
+.title-col {
+  font-family: "Lilita One", cursive;
+  color: #352e25;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .button, .button__yellow {
@@ -850,4 +874,8 @@ h1 {
 
 .avatar {
   width: 5rem;
+}
+.avatar-small {
+  width: 3rem;
+  border: 3px solid white;
 }/*# sourceMappingURL=style.css.map */

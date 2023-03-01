@@ -45,7 +45,7 @@
             </nav>
         </header>
 
-        <main class="container-fluid">
+        <main class="container-fluid pr-0 pl-0">
             <section class="section-encounter container flux">
                 <div
                     class="section-encounter_title d-flex justify-content-start"
@@ -65,7 +65,7 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
-                <div class="section-encounter__information d-flex">
+                <div class="section-encounter__information">
                     <div
                         class="section-encounter__information-adress col col-12 col-md-6"
                     >
@@ -85,11 +85,20 @@
                         </div>
                     </div>
                     <div
-                        class="section-encounter__information-adress col col-12 col-md-6 m-3"
+                        class="section-encounter__information-adress col col-12 col-md-6"
                     >
-                        <div class="card border-dark mb-3">
-                            <div class="card-header">
-                                Rencontre proposée par
+                        <div class="card border-dark m-3">
+                            <div
+                                class="card-header d-flex justify-content-between"
+                            >
+                                <p class="align-self-center">
+                                    Rencontre proposée par
+                                </p>
+                                <img
+                                    src="assets/images/Chien-jaune.jpg"
+                                    alt="avatar"
+                                    class="avatar-small rounded-circle"
+                                />
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Date(s) et Heure(s)</h5>
@@ -101,8 +110,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-encounter__presentation d-flex">
-                    <div class="col col-md-8 col-12">
+                <div class="section-encounter__presentation">
+                    <div class="col col-lg-8 col-12 text-center">
+                        <h3>Soirées oldies, on sort les vieux jeux</h3>
                         <p>
                             Comme tous les jeudi je vous propose de sortir un
                             vieux jeu. Shakespeare est un jeu de gestion et
@@ -120,9 +130,9 @@
                     </div>
 
                     <img
-                        src="assets/images/shakespeare.jpg"
+                        src="assets/images/shakespeare.gif"
                         alt="shakespeare"
-                        class="col col-md-4 col-12 img-fluid"
+                        class="col col-lg-4 col-12"
                     />
                 </div>
 
@@ -130,38 +140,51 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col">Aventuriers présents</th>
+                                <th scope="col" class="title-col">
+                                    Aventuriers présents (3/4)
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">
+                                <th
+                                    scope="row"
+                                    class="d-flex justify-content-start"
+                                >
                                     <img
                                         src="assets/images/Chien-jaune.jpg"
                                         alt="avatar"
-                                        class="avatar rounded-circle"
+                                        class="avatar-small rounded-circle"
                                     />
-                                    <h5>Chien-Jaune</h5>
+                                    <h5 class="align-self-center pl-3">
+                                        Chien-Jaune
+                                    </h5>
                                 </th>
                             </tr>
                             <tr>
-                                <th scope="row">
+                                <th
+                                    scope="row"
+                                    class="d-flex justify-content-start"
+                                >
                                     <img
-                                        src="assets/images/Chien-jaune.jpg"
+                                        src="assets/images/roro.jpg"
                                         alt="avatar"
-                                        class="avatar rounded-circle"
+                                        class="avatar-small rounded-circle"
                                     />
-                                    <h5>Chien-Jaune</h5>
+                                    <h5 class="align-self-center pl-3">Roro</h5>
                                 </th>
                             </tr>
                             <tr>
-                                <th scope="row">
+                                <th
+                                    scope="row"
+                                    class="d-flex justify-content-start"
+                                >
                                     <img
-                                        src="assets/images/Chien-jaune.jpg"
-                                        alt="avatar"
-                                        class="avatar rounded-circle"
+                                        src="assets/images/Eric.png"
+                                        alt="avatar-small"
+                                        class="avatar-small rounded-circle"
                                     />
-                                    <h5>Chien-Jaune</h5>
+                                    <h5 class="align-self-center pl-3">Eric</h5>
                                 </th>
                             </tr>
                         </tbody>
@@ -169,6 +192,87 @@
                 </div>
 
                 <button class="button">S'inscrire</button>
+
+                <main role="main" class="container bootdey.com">
+                    <div class="my-3 p-3 bg-white rounded box-shadow">
+                        <h6 class="border-bottom border-gray pb-2 mb-0">
+                            Derniers messages
+                        </h6>
+                        <div class="media text-muted pt-3">
+                            <img
+                                src="assets/images/Chien-jaune.jpg"
+                                alt=""
+                                class="mr-2 rounded"
+                                width="32"
+                                height="32"
+                            />
+                            <p
+                                class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                            >
+                                <strong class="d-block text-gray-dark"
+                                    >Chien-Jaune</strong
+                                >
+                                Encore une place ! Dépêchez-vous !
+                            </p>
+                        </div>
+                        <div class="media text-muted pt-3">
+                            <img
+                                src="assets/images/Eric.png"
+                                alt=""
+                                class="mr-2 rounded"
+                                width="32"
+                                height="32"
+                            />
+                            <p
+                                class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                            >
+                                <strong class="d-block text-gray-dark"
+                                    >Eric</strong
+                                >
+                                Je m'inscris, ça fait longtemps que je voulais
+                                le découvrir ce jeu !
+                            </p>
+                        </div>
+                        <div class="media text-muted pt-3">
+                            <img
+                                src="assets/images/Chien-jaune.jpg"
+                                alt=""
+                                class="mr-2 rounded"
+                                width="32"
+                                height="32"
+                            />
+                            <p
+                                class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                            >
+                                <strong class="d-block text-gray-dark"
+                                    >Chien-jaune</strong
+                                >
+                                Pas de souci j'expliquerai les règles.
+                            </p>
+                        </div>
+                        <div class="media text-muted pt-3">
+                            <img
+                                src="assets/images/roro.jpg"
+                                alt=""
+                                class="mr-2 rounded"
+                                width="32"
+                                height="32"
+                            />
+                            <p
+                                class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"
+                            >
+                                <strong class="d-block text-gray-dark"
+                                    >Roro</strong
+                                >
+                                Je m'inscris mais je n'aurais surement pas le
+                                temps de regarder la vidéo des règles...
+                            </p>
+                        </div>
+                        <small class="d-block text-right mt-3">
+                            <a href="#">All messages</a>
+                        </small>
+                    </div>
+                </main>
             </section>
         </main>
 
