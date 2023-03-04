@@ -815,7 +815,11 @@ h1 {
   }
 }
 .section-encounter__presentation {
-  margin: 1rem auto;
+  margin: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px orange;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -824,10 +828,19 @@ h1 {
     flex-direction: row;
   }
 }
-.section-encounter__presentation div p {
+.section-encounter__presentation h3 {
   font-family: "Cabin", sans-serif;
   color: #352e25;
   font-size: 1.5rem;
+  border: 2px solid #352e25;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.section-encounter__presentation div p {
+  font-family: "Cabin", sans-serif;
+  color: #352e25;
+  font-size: 1rem;
+  padding: 1rem;
 }
 .section-encounter__presentation img {
   -o-object-fit: cover;
@@ -835,6 +848,15 @@ h1 {
   margin: 0 auto;
 }
 .section-encounter__inscription {
+  background-color: white;
+  border: 2.5px solid #352e25;
+}
+.section-encounter__inscription button {
+  margin-top: 0.5rem;
+}
+.section-encounter__messages {
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px orange;
   background-color: white;
 }
 

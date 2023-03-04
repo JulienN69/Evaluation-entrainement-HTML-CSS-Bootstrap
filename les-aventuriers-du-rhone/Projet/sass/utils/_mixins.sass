@@ -1,6 +1,11 @@
 @use "_fonts" as font
 @use "_colors" as color
 
+@mixin box()
+    border-radius: 10px
+    box-shadow: 5px 5px 15px orange
+    background-color: white
+
 @mixin title($fontsize: 2rem)
     font-family: font.$font-title
     color: color.$brown

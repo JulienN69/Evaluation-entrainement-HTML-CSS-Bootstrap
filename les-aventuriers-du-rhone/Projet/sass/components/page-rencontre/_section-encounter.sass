@@ -34,22 +34,37 @@ h1
             display: flex
 
     &__presentation
-        margin: 1rem auto
+        margin: 3rem
+        padding: 2rem
+        @include utils.box()
         display: flex
         flex-direction: column
         @media screen and (min-width: 992px)
             flex-direction: row
         
+        h3
+            @include utils.paragraphe(1.5rem)
+            border: 2px solid utils.$brown
+            padding: 1rem
+            border-radius: 10px
+  
         div
             p
-                @include utils.paragraphe(1.5rem)
-        
+                @include utils.paragraphe(1rem)
+                padding: 1rem
+
         img
             object-fit: cover
             margin: 0 auto
 
     &__inscription
         background-color: white
+        border: 2.5px solid utils.$brown
+        button
+            margin-top: 0.5rem
+
+    &__messages
+        @include utils.box()
 
 .title-col
     @include utils.title(1.4rem)
