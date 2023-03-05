@@ -784,27 +784,29 @@ main {
 h1 {
   font-family: "Lilita One", cursive;
   color: #352e25;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
+  padding: 1.5rem;
   align-self: center;
 }
 
 .section-encounter {
   background-color: rgb(243, 203, 72);
   margin: 1rem auto;
-  border-radius: 10px;
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+@media screen and (min-width: 1400px) {
+  .section-encounter {
+    border-radius: 10px;
+  }
 }
 .section-encounter iframe {
   width: 100%;
   display: block;
 }
 .section-encounter_title {
-  border: 2.5px solid #352e25;
-  margin: 1rem;
-  background-color: white;
-  border-radius: 10px;
+  text-align: center;
 }
 .section-encounter_title img {
   margin: 1rem;
@@ -814,29 +816,38 @@ h1 {
     display: flex;
   }
 }
+.section-encounter__information iframe {
+  align-self: center;
+}
+.section-encounter__information-adress {
+  padding: 0;
+}
 .section-encounter__presentation {
-  margin: 3rem;
-  padding: 2rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 5px 5px 15px orange;
   background-color: white;
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 992px) {
-  .section-encounter__presentation {
-    flex-direction: row;
-  }
+.section-encounter__presentation-card {
+  max-width: 400px;
+  margin: 1rem auto;
 }
 .section-encounter__presentation h3 {
   font-family: "Cabin", sans-serif;
   color: #352e25;
   font-size: 1.5rem;
-  border: 2px solid #352e25;
-  padding: 1rem;
-  border-radius: 10px;
+  text-align: center;
 }
-.section-encounter__presentation div p {
+@media screen and (min-width: 992px) {
+  .section-encounter__presentation-rules {
+    display: flex;
+  }
+}
+.section-encounter__presentation-rules p {
   font-family: "Cabin", sans-serif;
   color: #352e25;
   font-size: 1rem;
@@ -850,6 +861,7 @@ h1 {
 .section-encounter__inscription {
   background-color: white;
   border: 2.5px solid #352e25;
+  margin: 3rem 2rem 1rem 2rem;
 }
 .section-encounter__inscription button {
   margin-top: 0.5rem;

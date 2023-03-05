@@ -8,47 +8,63 @@ main
     overflow: hidden
 
 h1
-    @include utils.title(2rem)
+    @include utils.title(3rem)
+    padding: 1.5rem
     align-self: center
 
 .section-encounter
     background-color: utils.$yellow
     margin: 1rem auto
-    border-radius: 10px
     padding-top: 1rem
     padding-bottom: 2rem
+    @media screen and ( min-width: 1400px )
+        border-radius: 10px
+        
     iframe
         width: 100%
         display: block
 
     &_title
-        border: 2.5px solid utils.$brown
-        margin: 1rem
-        background-color: white
-        border-radius: 10px
+        // border: 2.5px solid utils.$brown
+        // margin: 1rem
+        // background-color: white
+        // border-radius: 10px
+        text-align: center
         img
             margin: 1rem
 
     &__information
         @media screen and (min-width: 768px)
             display: flex
+        iframe
+            align-self: center
+
+        &-adress
+            padding: 0
 
     &__presentation
-        margin: 3rem
-        padding: 2rem
+        max-width: 1200px
+        margin: 1rem auto
+        padding: 1rem
         @include utils.box()
         display: flex
         flex-direction: column
-        @media screen and (min-width: 992px)
-            flex-direction: row
-        
+
+        &-card
+            max-width: 400px
+            margin: 1rem auto
+
         h3
             @include utils.paragraphe(1.5rem)
-            border: 2px solid utils.$brown
-            padding: 1rem
-            border-radius: 10px
+            text-align: center
+            // border: 2px solid utils.$brown
+            // padding: 1rem
+            // border-radius: 10px
   
-        div
+        &-rules
+            @media screen and (min-width: 992px)
+                display: flex
+    
             p
                 @include utils.paragraphe(1rem)
                 padding: 1rem
@@ -60,6 +76,7 @@ h1
     &__inscription
         background-color: white
         border: 2.5px solid utils.$brown
+        margin: 3rem 2rem 1rem 2rem
         button
             margin-top: 0.5rem
 
