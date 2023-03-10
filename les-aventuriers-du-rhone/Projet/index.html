@@ -13,23 +13,24 @@
         />
         <link rel="stylesheet" href="assets/css/style.css" />
         <title>Les aventuriers du Rhône</title>
-        <description>
-            <b>Les aventuriers du Rhône</b> est une association pour les mordus
-            de jeux de société qui veulent créer ou rejoindre des parties
-            !</description
-        >
+        <meta
+            name="description"
+            content="Les aventuriers du Rhône est une association pour les mordus
+        de jeux de société qui veulent créer ou rejoindre des parties
+        !"
+        />
     </head>
     <body>
         <!----------------- Start Header --------------------->
 
         <figure class="header-picture">
-            <header class="header">
+            <header class="header" id="header">
                 <nav class="navbarFixed">
-                    <ul class="navbarFixed__Item">
+                    <ul class="navbarFixed__Item mb-0">
                         <li><a href="#">Inscription</a></li>
                         <li><a href="#">Connexion</a></li>
                     </ul>
-                    <ul class="navbarFixed__logo">
+                    <ul class="navbarFixed__logo d-flex mb-0">
                         <li>
                             <a href="#">
                                 <svg
@@ -42,6 +43,25 @@
                                 >
                                     <path
                                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#header">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    fill="currentColor"
+                                    class="bi bi-house-fill"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"
+                                    />
+                                    <path
+                                        d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"
                                     />
                                 </svg>
                             </a>
@@ -96,7 +116,9 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Comptes rendus</a>
+                                <a href="#section-report" class="nav-link"
+                                    >Comptes rendus</a
+                                >
                             </li>
                             <li class="nav-item">
                                 <a class="header__link" href="#">
@@ -111,7 +133,9 @@
                                 <a href="#" class="nav-link"> Forum </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Présentation </a>
+                                <a href="#section-info" class="nav-link"
+                                    >Description
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -420,7 +444,7 @@
 
         <!----------------------- START SECTION REPORT ----------------------->
 
-        <section class="container-fluid section-report">
+        <section class="container-fluid section-report" id="section-report">
             <div class="flux section-report__flux">
                 <div class="d-flex justify-content-center">
                     <a class="section-report__link" href="#">
@@ -437,11 +461,11 @@
 
                 <div class="section-report__grid">
                     <div class="section-report__cell cell-2">
-                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <h3>Paleo avec mon fils</h3>
                         <p>
-                            Partie assez incroyable hier soir, 2 joueurs
-                            découvraient le jeu. Pour ma part c'était ma 5ème
-                            partie et je me décidais à tester les loutres...
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quia explicabo porro omnis provident,
+                            consectetur deserun.
                         </p>
                         <button
                             type="button"
@@ -458,11 +482,11 @@
                         />
                     </div>
                     <div class="section-report__cell cell-4">
-                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <h3>Construction de merveilles !</h3>
                         <p>
-                            Partie assez incroyable hier soir, 2 joueurs
-                            découvraient le jeu. Pour ma part c'était ma 5ème
-                            partie et je me décidais à tester les loutres...
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quia explicabo porro omnis provident,
+                            consectetur deserun.
                         </p>
                         <button type="button" class="btn btn-primary">
                             Lire la suite
@@ -476,11 +500,11 @@
                         />
                     </div>
                     <div class="section-report__cell cell-6">
-                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <h3>Le chevalier magicien</h3>
                         <p>
-                            Partie assez incroyable hier soir, 2 joueurs
-                            découvraient le jeu. Pour ma part c'était ma 5ème
-                            partie et je me décidais à tester les loutres...
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quia explicabo porro omnis provident,
+                            consectetur deserun.
                         </p>
                         <button type="button" class="btn btn-primary">
                             Lire la suite
@@ -494,11 +518,11 @@
                         />
                     </div>
                     <div class="section-report__cell cell-8">
-                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <h3>I'm a poor lonesome cow-boy</h3>
                         <p>
-                            Partie assez incroyable hier soir, 2 joueurs
-                            découvraient le jeu. Pour ma part c'était ma 5ème
-                            partie et je me décidais à tester les loutres...
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quia explicabo porro omnis provident,
+                            consectetur deserun.
                         </p>
                         <button type="button" class="btn btn-primary">
                             Lire la suite
@@ -512,11 +536,11 @@
                         />
                     </div>
                     <div class="section-report__cell cell-10">
-                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <h3>Changement de planète</h3>
                         <p>
-                            Partie assez incroyable hier soir, 2 joueurs
-                            découvraient le jeu. Pour ma part c'était ma 5ème
-                            partie et je me décidais à tester les loutres...
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quia explicabo porro omnis provident,
+                            consectetur deserun.
                         </p>
                         <button type="button" class="btn btn-primary">
                             Lire la suite
@@ -531,11 +555,11 @@
                     </div>
 
                     <div class="section-report__cell cell-12">
-                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <h3>Enquête au manoir</h3>
                         <p>
-                            Partie assez incroyable hier soir, 2 joueurs
-                            découvraient le jeu. Pour ma part c'était ma 5ème
-                            partie et je me décidais à tester les loutres...
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quia explicabo porro omnis provident,
+                            consectetur deserun.
                         </p>
                         <button type="button" class="btn btn-primary">
                             Lire la suite
@@ -549,11 +573,11 @@
                         />
                     </div>
                     <div class="section-report__cell cell-14">
-                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <h3>Tous au valhalaa</h3>
                         <p>
-                            Partie assez incroyable hier soir, 2 joueurs
-                            découvraient le jeu. Pour ma part c'était ma 5ème
-                            partie et je me décidais à tester les loutres...
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quia explicabo porro omnis provident,
+                            consectetur deserun.
                         </p>
                         <button type="button" class="btn btn-primary">
                             Lire la suite
@@ -567,11 +591,11 @@
                         />
                     </div>
                     <div class="section-report__cell cell-16">
-                        <h3>J'étais sur le root toute la sainte journée</h3>
+                        <h3>On ressort un classique</h3>
                         <p>
-                            Partie assez incroyable hier soir, 2 joueurs
-                            découvraient le jeu. Pour ma part c'était ma 5ème
-                            partie et je me décidais à tester les loutres...
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quia explicabo porro omnis provident,
+                            consectetur deserun.
                         </p>
                         <button type="button" class="btn btn-primary">
                             Lire la suite
@@ -610,7 +634,7 @@
 
         <!--------- END SECTION REPORT, START SECTION INFO ---------->
 
-        <section class="section-info">
+        <section class="section-info" id="section-info">
             <div class="container section-info__flex">
                 <div class="section-info__container container">
                     <div class="section-info__association col-md-12 col-lg-6">
